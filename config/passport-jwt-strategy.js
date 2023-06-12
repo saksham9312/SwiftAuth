@@ -1,12 +1,13 @@
 const passport = require('passport');
 const JWTStrategy = require('passport-jwt').Strategy;
 const ExtractJWT = require('passport-jwt').ExtractJwt;
+const secretKey = process.env.JWT_SECRET;
 
 const Client = require('../modals/clients');
 
 let opts = {
     jwtFromRequest: ExtractJWT.fromUrlQueryParameter(),
-    secretOrKey: 'swift'
+    secretOrKey: secretKey
 }
 
 passport.use(new JWTStrategy(opts, async function(jwtPayLoad, done){

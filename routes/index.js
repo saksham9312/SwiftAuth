@@ -8,5 +8,5 @@ router.use('/client', require('./client'));
 router.use('/incoming', require('./incoming'));
 // router.use('/post', require('./post'));
 // router.use('/comment', require('./comment'));
-// router.use('/api', require('./api'));
+router.use('/api', require('./api'));
 module.exports = router;

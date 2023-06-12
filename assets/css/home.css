@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  background-image: url('/images/horizontal_bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/images/vertical_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .space{
+   margin-top: 20%;
+  }
+}
+

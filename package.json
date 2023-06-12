@@ -7,18 +7,21 @@
     "start": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Binary Bats",
+  "author": "Saksham Gupta",
   "license": "ISC",
   "dependencies": {
     "connect-mongo": "^5.0.0",
+    "dotenv": "^16.1.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
+    "hover.css": "^2.3.2",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.2",
     "nodemailer": "^6.9.3",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
-    "twilio": "^4.11.2"
+    "twilio": "^4.11.2",
+    "uuid": "^9.0.0"
   }
 }

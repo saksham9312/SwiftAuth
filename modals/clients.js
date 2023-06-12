@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const clientSchema = new mongoose.Schema({
+    apiKey:{
+        type: String,
+        unique: true,
+        required: true
+    },
     name:{
         type: String,
         required: true,
@@ -26,6 +31,16 @@ const clientSchema = new mongoose.Schema({
     verified: {
         type: Boolean,
         default: false
+    },
+    users: [
+        {
+            type:  mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        }
+    ],
+    config: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Config'
     }
 }, {
     timestamps: true
@@ -33,3 +48,4 @@ const clientSchema = new mongoose.Schema({
 
 const Client = mongoose.model('Client', clientSchema);
 module.exports = Client;
+
