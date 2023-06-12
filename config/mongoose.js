@@ -1,11 +1,9 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/client_db');
+main().catch(err => console.log(err));
 
-const db = mongoose.connection;
+async function main() {
+  await mongoose.connect('mongodb+srv://saksham9312:Guitar%40123@swiftauth.frsmwje.mongodb.net/?retryWrites=true&w=majority');
 
-db.on('error',console.error.bind(console, 'error connecting to db'));
-
-db.once('open',function(){
-    console.log("Successfully connected to DB!!");
-})
+  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+}
