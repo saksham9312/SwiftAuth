@@ -28,7 +28,7 @@ module.exports.checkClient = async function (req, res) {
       if(client){
         const token = jwt.sign(client.toJSON(), secretKey, { expiresIn: "1d" });
         console.log(token);
-        const url = `https://swiftauth-production.up.railway.app//client/dashboard/setup/${token}`;
+        const url = `https://swiftauth-production.up.railway.app/client/dashboard/setup/${token}`;
         console.log(url);
         await WA.sendMessage(`Please continue on this link.\n${url}`,From);
         return;
