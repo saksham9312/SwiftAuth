@@ -45,7 +45,7 @@ SwiftAuth is a SaaS platform that enables businesses to authenticate their users
 #### Configure Parameters
 
 ```http
-  PUT http://localhost:8000/api/v1/business/config?credential=<YOUR_API_KEY>
+  PUT https://swiftauth-production.up.railway.app/api/v1/business/config?credential=<YOUR_API_KEY>
 ```
 Send this as Body 
 
@@ -58,7 +58,7 @@ Send this as Body
 Whenever user signs up on your platform, also call this API to register in the database
 
 ```http
-  POST http://localhost:8000/api/v1/register/<YOUR_API_KEY>
+  POST https://swiftauth-production.up.railway.app/api/v1/register/<YOUR_API_KEY>
 ```
 Send this as Body 
 
