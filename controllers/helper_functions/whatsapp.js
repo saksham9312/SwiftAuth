@@ -1,5 +1,5 @@
-var accountSid = 'ACe0994609f38a303797380971fd99a80a';
-var authToken = '844322b05cef0856d34b638b1d52a911';
+var accountSid = process.env.TWILIO_ACCOUNT_SID
+var authToken = process.env.TWILIO_AUTH_TOKEN
 
 const twilio = require('twilio')(accountSid,authToken, {
     lazyLoading: true
