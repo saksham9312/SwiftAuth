@@ -15,7 +15,7 @@ passport.use(new JWTStrategy(opts, async function(jwtPayLoad, done){
     try{
         console.log("JWT");
         let client = await Client.findOne({id: jwtPayLoad.id});
-        console.log(client);
+        console.log(client); 
         if(client){
             return done(null,client);
         }else{
