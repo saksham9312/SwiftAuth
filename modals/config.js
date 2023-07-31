@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const configSchema = new mongoose.Schema({
-    clientID: {
+    apiKey: {
         type:  mongoose.Schema.Types.ObjectId,
         ref: 'Client'
     },
