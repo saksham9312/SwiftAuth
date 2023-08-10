@@ -15,6 +15,8 @@ SwiftAuth is a SaaS platform that enables businesses to authenticate their users
 
 **Database:** MongoDb
 
+**Hosting:** AWS
+
 
 
 
@@ -45,7 +47,7 @@ SwiftAuth is a SaaS platform that enables businesses to authenticate their users
 #### Configure Parameters
 
 ```http
-  PUT https://swiftauth.onrender.com/api/v1/business/config?credential=<YOUR_API_KEY>
+  PUT http://swiftauth-api-env.eba-q7uqvfdz.ap-south-1.elasticbeanstalk.com/api/v1/business/config?credential=<YOUR_API_KEY>
 ```
 Send this as Body 
 
@@ -58,7 +60,7 @@ Send this as Body
 Whenever user signs up on your platform, also call this API to register in the database
 
 ```http
-  POST https://swiftauth.onrender.com/api/v1/register/<YOUR_API_KEY>
+  POST http://swiftauth-api-env.eba-q7uqvfdz.ap-south-1.elasticbeanstalk.com/api/v1/register/<YOUR_API_KEY>
 ```
 Send this as Body 
 
