@@ -39,7 +39,7 @@ SwiftAuth is a SaaS platform that enables businesses to authenticate their users
 
 * You are all set to recieve links!
 
-### For further guide, please follow this video: [Guide](https://youtu.be/FXkFOKAP4pE)
+### For further guide, please follow this video: [Guide](https://youtu.be/9ttUHHZ-FCU)
 
     
 ## API Reference
